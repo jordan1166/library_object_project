@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div id="whole">
+      <div id="left"></div>
+      <div id="right">
+        <form id="my_form" onsubmit="return false">
+          <div id="author">
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required />
+          </div>
+          <div id="title">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required />
+          </div>
+          <div id="pages">
+            <label for="pages">Number of pages:</label>
+            <input type="number" id="pages" name="pages" required />
+          </div>
+          <div id="read">
+            <div>Select whether or not you read the book:</div>
+            <div>
+              <input type="radio" id="read" name="read" value="Yes" checked />
+              <label for="read">Read</label>
+            </div>
+            <div>
+              <input type="radio" id="not-read" name="read" value="No" />
+              <label for="not-read">Not read</label>
+            </div>
+          </div>
+          <button id="add_book" type="submit">Add Book</button>
+        </div>
+        </form>  
+    </div>
+  </body>
+</html>
